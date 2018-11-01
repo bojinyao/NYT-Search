@@ -1,0 +1,21 @@
+.jumbotron{
+  background-image: url(nyt.png);
+  background-position: center;
+}
+
+.display-4, .lead{
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+span {
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #717171;
+}

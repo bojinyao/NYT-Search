@@ -1,0 +1,39 @@
+{
+  "name": "nyt-react-search",
+  "version": "1.0.0",
+  "description": "NYT search and save app",
+  "main": "server.js",
+  "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "nodemon server.js | npm run client",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElijahKotyluk/NYT-react-search.git"
+  },
+  "author": "elliot reymond-christensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElijahKotyluk/NYT-react-search/issues"
+  },
+  "homepage": "https://github.com/ElijahKotyluk/NYT-react-search#readme",
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "ajv": "^6.5.4",
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.16.3",
+    "mongoose": "^4.11.7",
+    "react": "^16.5.2",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "^2.0.4"
+  }
+}
